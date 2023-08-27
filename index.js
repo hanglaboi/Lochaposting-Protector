@@ -29,5 +29,5 @@ client.on(Events.MessageCreate, message => {
 // Log in to Discord with your client's token
 client.login(token);
 
-const { server, PORT } = require('keepAlive.js');
+const { server, PORT } = require('./keepAlive.js');
 server.listen(PORT, () => console.log(`Keep alive server running on port ${PORT}`));
