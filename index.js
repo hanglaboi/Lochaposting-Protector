@@ -21,7 +21,7 @@ client.on(Events.MessageCreate, message => {
 		else if(re.test(message.content)) {
 			usr = message.guild.members.resolve(message.author.id);
 			message.delete();
-			usr.timeout(300000);
+			usr.timeout(60000);
 		}
 	}
 })
